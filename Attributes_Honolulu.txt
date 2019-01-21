@@ -1,0 +1,3378 @@
+$Start:OA_Flow_Core_2004$
+  DesignSpecification:OutdoorAir,
+    SZ DSOA Core_ZN,         !- Name
+    Flow/Area,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow per Person {m3/s-person}
+    0.000507968,             !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0.0;                     !- Outdoor Air Flow per Zone {m3/s}
+$End:OA_Flow_Core_2004$
+
+$Start:OA_Flow_Core_2007_2010_2013_2016$
+  DesignSpecification:OutdoorAir,
+    SZ DSOA Core_ZN,         !- Name
+    Flow/Area,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow per Person {m3/s-person}
+    0.000431773,             !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0.0;                     !- Outdoor Air Flow per Zone {m3/s}
+$End:OA_Flow_Core_2007_2010_2013_2016$
+
+$Start:OA_Flow_ZN1_2004$
+  DesignSpecification:OutdoorAir,
+    SZ DSOA Perimeter_ZN_1,  !- Name
+    Flow/Area,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow per Person {m3/s-person}
+    0.000507968,             !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0.0;                     !- Outdoor Air Flow per Zone {m3/s}
+$End:OA_Flow_ZN1_2004$
+
+$Start:OA_Flow_ZN1_2007_2010_2013_2016$
+  DesignSpecification:OutdoorAir,
+    SZ DSOA Perimeter_ZN_1,  !- Name
+    Flow/Area,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow per Person {m3/s-person}
+    0.000431773,             !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0.0;                     !- Outdoor Air Flow per Zone {m3/s}
+$End:OA_Flow_ZN1_2007_2010_2013_2016$
+
+$Start:OA_Flow_ZN2_2004$
+  DesignSpecification:OutdoorAir,
+    SZ DSOA Perimeter_ZN_2,  !- Name
+    Flow/Area,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow per Person {m3/s-person}
+    0.000507968,             !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0.0;                     !- Outdoor Air Flow per Zone {m3/s}
+$End:OA_Flow_ZN2_2004$
+
+$Start:OA_Flow_ZN2_2007_2010_2013_2016$
+  DesignSpecification:OutdoorAir,
+    SZ DSOA Perimeter_ZN_2,  !- Name
+    Flow/Area,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow per Person {m3/s-person}
+    0.000431773,             !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0.0;                     !- Outdoor Air Flow per Zone {m3/s}
+$End:OA_Flow_ZN2_2007_2010_2013_2016$
+
+$Start:OA_Flow_ZN3_2004$
+  DesignSpecification:OutdoorAir,
+    SZ DSOA Perimeter_ZN_3,  !- Name
+    Flow/Area,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow per Person {m3/s-person}
+    0.000507968,             !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0.0;                     !- Outdoor Air Flow per Zone {m3/s}
+$End:OA_Flow_ZN3_2004$
+
+$Start:OA_Flow_ZN3_2007_2010_2013_2016$
+  DesignSpecification:OutdoorAir,
+    SZ DSOA Perimeter_ZN_3,  !- Name
+    Flow/Area,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow per Person {m3/s-person}
+    0.000431773,             !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0.0;                     !- Outdoor Air Flow per Zone {m3/s}
+$End:OA_Flow_ZN3_2007_2010_2013_2016$
+
+$Start:OA_Flow_ZN4_2004$
+  DesignSpecification:OutdoorAir,
+    SZ DSOA Perimeter_ZN_4,  !- Name
+    Flow/Area,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow per Person {m3/s-person}
+    0.000507968,             !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0.0;                     !- Outdoor Air Flow per Zone {m3/s}
+$End:OA_Flow_ZN4_2004$
+
+$Start:OA_Flow_ZN4_2007_2010_2013_2016$
+  DesignSpecification:OutdoorAir,
+    SZ DSOA Perimeter_ZN_4,  !- Name
+    Flow/Area,               !- Outdoor Air Method
+    ,                        !- Outdoor Air Flow per Person {m3/s-person}
+    0.000431773,             !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0.0;                     !- Outdoor Air Flow per Zone {m3/s}
+$End:OA_Flow_ZN4_2007_2010_2013_2016$
+
+$Start:Cool_COP_2004$
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:1 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    3.14721852276057,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:1_Fan-PSZ-AC:1_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:1_CoolC-PSZ-AC:1_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:2 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    3.14721852276057,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:2_Fan-PSZ-AC:2_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:2_CoolC-PSZ-AC:2_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:3 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    3.14721852276057,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:3_Fan-PSZ-AC:3_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:3_CoolC-PSZ-AC:3_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:4 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    3.14721852276057,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:4_Fan-PSZ-AC:4_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:4_CoolC-PSZ-AC:4_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:5 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    3.14721852276057,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:5_Fan-PSZ-AC:5_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:5_CoolC-PSZ-AC:5_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+$End:Cool_COP_2004$
+
+$Start:Cool_COP_2007_2010$
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:1 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    3.91156806861466,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:1_Fan-PSZ-AC:1_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:1_CoolC-PSZ-AC:1_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:2 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    3.91156806861466,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:2_Fan-PSZ-AC:2_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:2_CoolC-PSZ-AC:2_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:3 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    3.91156806861466,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:3_Fan-PSZ-AC:3_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:3_CoolC-PSZ-AC:3_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:4 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    3.91156806861466,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:4_Fan-PSZ-AC:4_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:4_CoolC-PSZ-AC:4_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:5 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    3.91156806861466,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:5_Fan-PSZ-AC:5_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:5_CoolC-PSZ-AC:5_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+$End:Cool_COP_2007_2010$
+
+$Start:Cool_COP_2013_2016$
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:1 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    4.11713235489972,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:1_Fan-PSZ-AC:1_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:1_CoolC-PSZ-AC:1_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:2 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    4.11713235489972,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:2_Fan-PSZ-AC:2_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:2_CoolC-PSZ-AC:2_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:3 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    4.11713235489972,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:3_Fan-PSZ-AC:3_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:3_CoolC-PSZ-AC:3_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:4 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    4.11713235489972,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:4_Fan-PSZ-AC:4_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:4_CoolC-PSZ-AC:4_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+
+  Coil:Cooling:DX:SingleSpeed,
+    PSZ-AC:5 Heat Pump DX Cooling Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Total Cooling Capacity {W}
+    AUTOSIZE,                !- Gross Rated Sensible Heat Ratio
+    4.11713235489972,        !- Gross Rated Cooling COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Evaporator Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:5_Fan-PSZ-AC:5_CoolCNode,  !- Air Inlet Node Name
+    PSZ-AC:5_CoolC-PSZ-AC:5_HeatCNode,  !- Air Outlet Node Name
+    HPACCoolCapFT,           !- Total Cooling Capacity Function of Temperature Curve Name
+    HPACCoolCapFFF,          !- Total Cooling Capacity Function of Flow Fraction Curve Name
+    HPACCOOLEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACCOOLEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR;         !- Part Load Fraction Correlation Curve Name
+$End:Cool_COP_2013_2016$
+
+$Start:Heat_COP_2004$
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:1 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.00696,                 !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:1_CoolC-PSZ-AC:1_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:1_HeatC-PSZ-AC:1_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:2 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.00696,                 !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:2_CoolC-PSZ-AC:2_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:2_HeatC-PSZ-AC:2_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:3 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.00696,                 !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:3_CoolC-PSZ-AC:3_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:3_HeatC-PSZ-AC:3_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:4 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.00696,                 !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:4_CoolC-PSZ-AC:4_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:4_HeatC-PSZ-AC:4_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:5 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.00696,                 !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:5_CoolC-PSZ-AC:5_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:5_HeatC-PSZ-AC:5_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+$End:Heat_COP_2004$
+
+$Start:Heat_COP_2007_2010$
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:1 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.292135,                !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:1_CoolC-PSZ-AC:1_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:1_HeatC-PSZ-AC:1_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:2 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.292135,                !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:2_CoolC-PSZ-AC:2_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:2_HeatC-PSZ-AC:2_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:3 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.292135,                !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:3_CoolC-PSZ-AC:3_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:3_HeatC-PSZ-AC:3_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:4 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.292135,                !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:4_CoolC-PSZ-AC:4_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:4_HeatC-PSZ-AC:4_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:5 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.292135,                !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:5_CoolC-PSZ-AC:5_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:5_HeatC-PSZ-AC:5_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+$End:Heat_COP_2007_2010$
+
+$Start:Heat_COP_2013_2016$
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:1 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.3592,                  !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:1_CoolC-PSZ-AC:1_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:1_HeatC-PSZ-AC:1_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:2 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.3592,                  !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:2_CoolC-PSZ-AC:2_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:2_HeatC-PSZ-AC:2_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:3 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.3592,                  !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:3_CoolC-PSZ-AC:3_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:3_HeatC-PSZ-AC:3_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:4 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.3592,                  !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:4_CoolC-PSZ-AC:4_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:4_HeatC-PSZ-AC:4_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+
+  Coil:Heating:DX:SingleSpeed,
+    PSZ-AC:5 Heat Pump DX Heating Coil,  !- Name
+    ALWAYS_ON,               !- Availability Schedule Name
+    AUTOSIZE,                !- Gross Rated Heating Capacity {W}
+    3.3592,                  !- Gross Rated Heating COP {W/W}
+    AUTOSIZE,                !- Rated Air Flow Rate {m3/s}
+    ,                        !- Rated Supply Fan Power Per Volume Flow Rate {W/(m3/s)}
+    PSZ-AC:5_CoolC-PSZ-AC:5_HeatCNode,  !- Air Inlet Node Name
+    PSZ-AC:5_HeatC-PSZ-AC:5_SuppHeatingNode,  !- Air Outlet Node Name
+    HPACHeatCapFT,           !- Heating Capacity Function of Temperature Curve Name
+    HPACHeatCapFFF,          !- Heating Capacity Function of Flow Fraction Curve Name
+    HPACHeatEIRFT,           !- Energy Input Ratio Function of Temperature Curve Name
+    HPACHeatEIRFFF,          !- Energy Input Ratio Function of Flow Fraction Curve Name
+    HPACCOOLPLFFPLR,         !- Part Load Fraction Correlation Curve Name
+    HPACCOOLEIRFT,           !- Defrost Energy Input Ratio Function of Temperature Curve Name
+    -12.2,                   !- Minimum Outdoor Dry-Bulb Temperature for Compressor Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature to Turn On Compressor {C}
+    1.67,                    !- Maximum Outdoor Dry-Bulb Temperature for Defrost Operation {C}
+    50.0,                    !- Crankcase Heater Capacity {W}
+    4.4,                     !- Maximum Outdoor Dry-Bulb Temperature for Crankcase Heater Operation {C}
+    ReverseCycle,            !- Defrost Strategy
+    OnDemand,                !- Defrost Control
+    ,                        !- Defrost Time Period Fraction
+    AUTOSIZE;                !- Resistive Defrost Heater Capacity {W}
+$End:Heat_COP_2013_2016$
+
+$Start:Lig_Sch_2004_2007$
+  Schedule:Compact,
+    BLDG_LIGHT_SCH,          !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 5:00,0.18,        !- Field 3
+    Until: 7:00,0.23,        !- Field 5
+    Until: 8:00,0.42,        !- Field 7
+    Until: 12:00,0.9,        !- Field 9
+    Until: 13:00,0.8,        !- Field 11
+    Until: 17:00,0.9,        !- Field 13
+    Until: 18:00,0.61,       !- Field 15
+    Until: 20:00,0.42,       !- Field 17
+    Until: 22:00,0.32,       !- Field 19
+    Until: 23:00,0.23,       !- Field 21
+    Until: 24:00,0.18,       !- Field 23
+    For: Weekends,           !- Field 25
+    Until: 24:00,0.18,       !- Field 26
+    For: Holiday,            !- Field 28
+    Until: 24:00,0.18,       !- Field 29
+    For: WinterDesignDay,    !- Field 31
+    Until: 24:00,0,          !- Field 32
+    For: SummerDesignDay,    !- Field 34
+    Until: 24:00,1,          !- Field 35
+    For: CustomDay1,         !- Field 37
+    Until: 24:00,0,          !- Field 38
+    For: CustomDay2,         !- Field 40
+    Until: 24:00,0;          !- Field 41
+$End:Lig_Sch_2004_2007$
+
+$Start:Lig_Sch_2010$
+  Schedule:Compact,
+    BLDG_LIGHT_SCH,          !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 5:00,0.18,        !- Field 3
+    Until: 6:00,0.23,        !- Field 5
+    Until: 7:00,0.187059,    !- Field 7
+    Until: 8:00,0.341586,    !- Field 9
+    Until: 12:00,0.73197,    !- Field 11
+    Until: 13:00,0.65064,    !- Field 13
+    Until: 17:00,0.73197,    !- Field 15
+    Until: 18:00,0.496113,   !- Field 17
+    Until: 20:00,0.341586,   !- Field 19
+    Until: 22:00,0.260256,   !- Field 21
+    Until: 23:00,0.187059,   !- Field 23
+    Until: 24:00,0.18,       !- Field 25
+    For: Weekends,           !- Field 27
+    Until: 24:00,0.18,       !- Field 28
+    For: Holiday,            !- Field 30
+    Until: 24:00,0.18,       !- Field 31
+    For: WinterDesignDay,    !- Field 33
+    Until: 24:00,0,          !- Field 34
+    For: SummerDesignDay,    !- Field 36
+    Until: 24:00,1,          !- Field 37
+    For: CustomDay1,         !- Field 39
+    Until: 24:00,0,          !- Field 40
+    For: CustomDay2,         !- Field 42
+    Until: 24:00,0;          !- Field 43
+$End:Lig_Sch_2010$
+
+$Start:Lig_Sch_2013_2016$
+  Schedule:Compact,
+    BLDG_LIGHT_SCH,          !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: Weekdays,           !- Field 2
+    Until: 5:00,0.18,        !- Field 3
+    Until: 6:00,0.23,        !- Field 5
+    Until: 7:00,0.178641345, !- Field 7
+    Until: 8:00,0.32621463,  !- Field 9
+    Until: 12:00,0.69903135, !- Field 11
+    Until: 13:00,0.6213612,  !- Field 13
+    Until: 17:00,0.69903135, !- Field 15
+    Until: 18:00,0.473787915,!- Field 17
+    Until: 20:00,0.32621463, !- Field 19
+    Until: 22:00,0.24854448, !- Field 21
+    Until: 23:00,0.178641345,!- Field 23
+    Until: 24:00,0.18,       !- Field 25
+    For: Weekends,           !- Field 27
+    Until: 24:00,0.18,       !- Field 28
+    For: Holiday,            !- Field 30
+    Until: 24:00,0.18,       !- Field 31
+    For: WinterDesignDay,    !- Field 33
+    Until: 24:00,0,          !- Field 34
+    For: SummerDesignDay,    !- Field 36
+    Until: 24:00,1,          !- Field 37
+    For: CustomDay1,         !- Field 39
+    Until: 24:00,0,          !- Field 40
+    For: CustomDay2,         !- Field 42
+    Until: 24:00,0;          !- Field 43
+$End:Lig_Sch_2013_2016$
+
+$Start:Equip_Sch_2004_2007$
+  Schedule:Compact,
+    BLDG_EQUIP_SCH,          !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: WeekDays,           !- Field 2
+    Until: 6:00,0.5,         !- Field 3
+    Until: 8:00,0.5,         !- Field 5
+    Until: 12:00,1,          !- Field 7
+    Until: 13:00,0.94,       !- Field 9
+    Until: 17:00,1,          !- Field 11
+    Until: 18:00,0.5,        !- Field 13
+    Until: 23:00,0.2,        !- Field 15
+    Until: 24:00,0.2,        !- Field 17
+    For: Weekends,           !- Field 19
+    Until: 24:00,0.2,        !- Field 20
+    For: Holiday,            !- Field 22
+    Until: 24:00,0.2,        !- Field 23
+    For: WinterDesignDay,    !- Field 25
+    Until: 24:00,0.0,        !- Field 26
+    For: SummerDesignDay,    !- Field 28
+    Until: 24:00,1.0,        !- Field 29
+    For: CustomDay1,         !- Field 31
+    Until: 24:00,0.0,        !- Field 32
+    For: CustomDay2,         !- Field 34
+    Until: 24:00,0.0;        !- Field 35
+$End:Equip_Sch_2004_2007$
+
+$Start:Equip_Sch_2010$
+  Schedule:Compact,
+    BLDG_EQUIP_SCH,          !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: WeekDays,           !- Field 2
+    Until: 6:00,0.42575,     !- Field 3
+    Until: 8:00,0.4846775,   !- Field 5
+    Until: 12:00,0.969355,   !- Field 7
+    Until: 13:00,0.9111937,  !- Field 9
+    Until: 17:00,0.969355,   !- Field 11
+    Until: 18:00,0.4846775,  !- Field 13
+    Until: 23:00,0.193871,   !- Field 15
+    Until: 24:00,0.1703,     !- Field 17
+    For: Weekends,           !- Field 19
+    Until: 24:00,0.1703,     !- Field 20
+    For: Holiday,            !- Field 22
+    Until: 24:00,0.1703,     !- Field 23
+    For: WinterDesignDay,    !- Field 25
+    Until: 24:00,0.0,        !- Field 26
+    For: SummerDesignDay,    !- Field 28
+    Until: 24:00,1.0,        !- Field 29
+    For: CustomDay1,         !- Field 31
+    Until: 24:00,0.0,        !- Field 32
+    For: CustomDay2,         !- Field 34
+    Until: 24:00,0.0;        !- Field 35
+$End:Equip_Sch_2010$
+
+$Start:Equip_Sch_2013_2016$
+  Schedule:Compact,
+    BLDG_EQUIP_SCH,          !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: WeekDays,           !- Field 2
+    Until: 6:00,0.4094775565,!- Field 3
+    Until: 8:00,0.4797526335,!- Field 5
+    Until: 12:00,0.959505267,!- Field 7
+    Until: 13:00,0.90193495098, !- Field 9
+    Until: 17:00,0.959505267,!- Field 11
+    Until: 18:00,0.4797526335, !- Field 13
+    Until: 23:00,0.1919010534, !- Field 15
+    Until: 24:00,0.1637910226, !- Field 17
+    For: Weekends,           !- Field 19
+    Until: 24:00,0.1637910226, !- Field 20
+    For: Holiday,            !- Field 22
+    Until: 24:00,0.1637910226, !- Field 23
+    For: WinterDesignDay,    !- Field 25
+    Until: 24:00,0.0,        !- Field 26
+    For: SummerDesignDay,    !- Field 28
+    Until: 24:00,1.0,        !- Field 29
+    For: CustomDay1,         !- Field 31
+    Until: 24:00,0.0,        !- Field 32
+    For: CustomDay2,         !- Field 34
+    Until: 24:00,0.0;        !- Field 35
+$End:Equip_Sch_2013_2016$
+
+$Start:Lights_2004_2007$
+  Lights,
+    Core_ZN_Lights,          !- Name
+    Core_ZN,                 !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    10.76391042,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_1_Lights,   !- Name
+    Perimeter_ZN_1,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    10.76391042,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_2_Lights,   !- Name
+    Perimeter_ZN_2,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    10.76391042,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_3_Lights,   !- Name
+    Perimeter_ZN_3,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    10.76391042,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_4_Lights,   !- Name
+    Perimeter_ZN_4,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    10.76391042,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+$End:Lights_2004_2007$
+
+$Start:Lights_2010$
+  Lights,
+    Core_ZN_Lights,          !- Name
+    Core_ZN,                 !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    9.687519375,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_1_Lights,   !- Name
+    Perimeter_ZN_1,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    9.687519375,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_2_Lights,   !- Name
+    Perimeter_ZN_2,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    9.687519375,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_3_Lights,   !- Name
+    Perimeter_ZN_3,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    9.687519375,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_4_Lights,   !- Name
+    Perimeter_ZN_4,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    9.687519375,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+$End:Lights_2010$
+
+$Start:Lights_2013$
+  Lights,
+    Core_ZN_Lights,          !- Name
+    Core_ZN,                 !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    8.826406542,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_1_Lights,   !- Name
+    Perimeter_ZN_1,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    8.826406542,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_2_Lights,   !- Name
+    Perimeter_ZN_2,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    8.826406542,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_3_Lights,   !- Name
+    Perimeter_ZN_3,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    8.826406542,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_4_Lights,   !- Name
+    Perimeter_ZN_4,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    8.826406542,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+$End:Lights_2013$
+
+$Start:Lights_2016$
+  Lights,
+    Core_ZN_Lights,          !- Name
+    Core_ZN,                 !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    8.503489229,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_1_Lights,   !- Name
+    Perimeter_ZN_1,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    8.503489229,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_2_Lights,   !- Name
+    Perimeter_ZN_2,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    8.503489229,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_3_Lights,   !- Name
+    Perimeter_ZN_3,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    8.503489229,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+
+  Lights,
+    Perimeter_ZN_4_Lights,   !- Name
+    Perimeter_ZN_4,          !- Zone or ZoneList Name
+    BLDG_LIGHT_SCH,          !- Schedule Name
+    Watts/Area,              !- Design Level Calculation Method
+    ,                        !- Lighting Level {W}
+    8.503489229,             !- Watts per Zone Floor Area {W/m2}
+    ,                        !- Watts per Person {W/person}
+    0.0000,                  !- Return Air Fraction
+    0.7000,                  !- Fraction Radiant
+    0.2000,                  !- Fraction Visible
+    1.0000,                  !- Fraction Replaceable
+    General,                 !- End-Use Subcategory
+    No;                      !- Return Air Fraction Calculated from Plenum Temperature
+$End:Lights_2016$
+
+$Start:Daylighting_2004_2007$
+$End:Daylighting_2004_2007$
+
+$Start:Daylighting_2010$
+!
+!Addendum CT sidelighting.
+!
+!-   ===========  ALL OBJECTS IN CLASS: DAYLIGHTING:DETAILED ===========
+
+  Daylighting:Controls,
+    Perimeter_ZN_1_DaylCtrl, !- Name
+    Perimeter_ZN_1,          !- Zone Name
+    SplitFlux,               !- Daylighting Method
+    ,                        !- Availability Schedule Name
+    Stepped,                 !- Lighting Control Type
+    0.3,                     !- Minimum Input Power Fraction for Continuous or ContinuousOff Dimming Control
+    0.2,                     !- Minimum Light Output Fraction for Continuous or ContinuousOff Dimming Control
+    3,                       !- Number of Stepped Control Steps
+    1.0,                     !- Probability Lighting will be Reset When Needed in Manual Stepped Control
+    Perimeter_ZN_1_DaylRefPt1,  !- Glare Calculation Daylighting Reference Point Name
+    180.0,                   !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
+    22.0,                    !- Maximum Allowable Discomfort Glare Index
+    ,                        !- DElight Gridding Resolution {m2}
+    Perimeter_ZN_1_DaylRefPt1,  !- Daylighting Reference Point 1 Name
+    0.02,                    !- Fraction of Zone Controlled by Reference Point 1
+    500.0,                   !- Illuminance Setpoint at Reference Point 1 {lux}
+    Perimeter_ZN_1_DaylRefPt2,  !- Daylighting Reference Point 2 Name
+    0.1,                     !- Fraction of Zone Controlled by Reference Point 2
+    500.0;                   !- Illuminance Setpoint at Reference Point 2 {lux}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_1_DaylRefPt1,  !- Name
+    Perimeter_ZN_1,          !- Zone Name
+    3.323600,                !- X-Coordinate of Reference Point {m}
+    1.600200,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_1_DaylRefPt2,  !- Name
+    Perimeter_ZN_1,          !- Zone Name
+    8.961100,                !- X-Coordinate of Reference Point {m}
+    1.600200,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:Controls,
+    Perimeter_ZN_2_DaylCtrl, !- Name
+    Perimeter_ZN_2,          !- Zone Name
+    SplitFlux,               !- Daylighting Method
+    ,                        !- Availability Schedule Name
+    Stepped,                 !- Lighting Control Type
+    0.3,                     !- Minimum Input Power Fraction for Continuous or ContinuousOff Dimming Control
+    0.2,                     !- Minimum Light Output Fraction for Continuous or ContinuousOff Dimming Control
+    3,                       !- Number of Stepped Control Steps
+    1.0,                     !- Probability Lighting will be Reset When Needed in Manual Stepped Control
+    Perimeter_ZN_2_DaylRefPt1,  !- Glare Calculation Daylighting Reference Point Name
+    90.0,                    !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
+    22.0,                    !- Maximum Allowable Discomfort Glare Index
+    ,                        !- DElight Gridding Resolution {m2}
+    Perimeter_ZN_2_DaylRefPt1,  !- Daylighting Reference Point 1 Name
+    0.06,                    !- Fraction of Zone Controlled by Reference Point 1
+    500.0,                   !- Illuminance Setpoint at Reference Point 1 {lux}
+    Perimeter_ZN_2_DaylRefPt2,  !- Daylighting Reference Point 2 Name
+    0.15,                    !- Fraction of Zone Controlled by Reference Point 2
+    500.0;                   !- Illuminance Setpoint at Reference Point 2 {lux}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_2_DaylRefPt1,  !- Name
+    Perimeter_ZN_2,          !- Zone Name
+    26.089800,               !- X-Coordinate of Reference Point {m}
+    3.323600,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_2_DaylRefPt2,  !- Name
+    Perimeter_ZN_2,          !- Zone Name
+    26.089800,               !- X-Coordinate of Reference Point {m}
+    9.230000,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:Controls,
+    Perimeter_ZN_3_DaylCtrl, !- Name
+    Perimeter_ZN_3,          !- Zone Name
+    SplitFlux,               !- Daylighting Method
+    ,                        !- Availability Schedule Name
+    Stepped,                 !- Lighting Control Type
+    0.3,                     !- Minimum Input Power Fraction for Continuous or ContinuousOff Dimming Control
+    0.2,                     !- Minimum Light Output Fraction for Continuous or ContinuousOff Dimming Control
+    3,                       !- Number of Stepped Control Steps
+    1.0,                     !- Probability Lighting will be Reset When Needed in Manual Stepped Control
+    Perimeter_ZN_3_DaylRefPt1,  !- Glare Calculation Daylighting Reference Point Name
+    0.0,                     !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
+    22.0,                    !- Maximum Allowable Discomfort Glare Index
+    ,                        !- DElight Gridding Resolution {m2}
+    Perimeter_ZN_3_DaylRefPt1,  !- Daylighting Reference Point 1 Name
+    0.1,                     !- Fraction of Zone Controlled by Reference Point 1
+    500.0,                   !- Illuminance Setpoint at Reference Point 1 {lux}
+    Perimeter_ZN_3_DaylRefPt2,  !- Daylighting Reference Point 2 Name
+    0.02,                    !- Fraction of Zone Controlled by Reference Point 2
+    500.0;                   !- Illuminance Setpoint at Reference Point 2 {lux}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_3_DaylRefPt1,  !- Name
+    Perimeter_ZN_3,          !- Zone Name
+    13.868400,               !- X-Coordinate of Reference Point {m}
+    16.859800,               !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_3_DaylRefPt2,  !- Name
+    Perimeter_ZN_3,          !- Zone Name
+    24.366400,               !- X-Coordinate of Reference Point {m}
+    16.859800,               !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:Controls,
+    Perimeter_ZN_4_DaylCtrl, !- Name
+    Perimeter_ZN_4,          !- Zone Name
+    SplitFlux,               !- Daylighting Method
+    ,                        !- Availability Schedule Name
+    Stepped,                 !- Lighting Control Type
+    0.3,                     !- Minimum Input Power Fraction for Continuous or ContinuousOff Dimming Control
+    0.2,                     !- Minimum Light Output Fraction for Continuous or ContinuousOff Dimming Control
+    3,                       !- Number of Stepped Control Steps
+    1.0,                     !- Probability Lighting will be Reset When Needed in Manual Stepped Control
+    Perimeter_ZN_4_DaylRefPt1,  !- Glare Calculation Daylighting Reference Point Name
+    270.0,                   !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
+    22.0,                    !- Maximum Allowable Discomfort Glare Index
+    ,                        !- DElight Gridding Resolution {m2}
+    Perimeter_ZN_4_DaylRefPt1,  !- Daylighting Reference Point 1 Name
+    0.06,                    !- Fraction of Zone Controlled by Reference Point 1
+    500.0,                   !- Illuminance Setpoint at Reference Point 1 {lux}
+    Perimeter_ZN_4_DaylRefPt2,  !- Daylighting Reference Point 2 Name
+    0.15,                    !- Fraction of Zone Controlled by Reference Point 2
+    500.0;                   !- Illuminance Setpoint at Reference Point 2 {lux}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_4_DaylRefPt1,  !- Name
+    Perimeter_ZN_4,          !- Zone Name
+    1.600200,                !- X-Coordinate of Reference Point {m}
+    15.136400,               !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_4_DaylRefPt2,  !- Name
+    Perimeter_ZN_4,          !- Zone Name
+    1.600200,                !- X-Coordinate of Reference Point {m}
+    9.244600,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+$End:Daylighting_2010$
+
+$Start:Daylighting_2013_2016$
+!-   ===========  ALL OBJECTS IN CLASS: DAYLIGHTING:CONTROLS ===========
+!
+!Addendum AY sidelighting.
+!
+
+  Daylighting:Controls,
+    Perimeter_ZN_1_DaylCtrl, !- Name
+    Perimeter_ZN_1,          !- Zone Name
+    SplitFlux,               !- Daylighting Method
+    ,                        !- Availability Schedule Name
+    Stepped,                 !- Lighting Control Type
+    0.3,                     !- Minimum Input Power Fraction for Continuous or ContinuousOff Dimming Control
+    0.2,                     !- Minimum Light Output Fraction for Continuous or ContinuousOff Dimming Control
+    3,                       !- Number of Stepped Control Steps
+    1.0,                     !- Probability Lighting will be Reset When Needed in Manual Stepped Control
+    Perimeter_ZN_1_DaylRefPt1,  !- Glare Calculation Daylighting Reference Point Name
+    180.0,                   !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
+    22.0,                    !- Maximum Allowable Discomfort Glare Index
+    ,                        !- DElight Gridding Resolution {m2}
+    Perimeter_ZN_1_DaylRefPt1,  !- Daylighting Reference Point 1 Name
+    0.2399,                  !- Fraction of Zone Controlled by Reference Point 1
+    375.0,                   !- Illuminance Setpoint at Reference Point 1 {lux}
+    Perimeter_ZN_1_DaylRefPt2,  !- Daylighting Reference Point 2 Name
+    0.0302,                  !- Fraction of Zone Controlled by Reference Point 2
+    375.0;                   !- Illuminance Setpoint at Reference Point 2 {lux}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_1_DaylRefPt1,  !- Name
+    Perimeter_ZN_1,          !- Zone Name
+    9.144000,                !- X-Coordinate of Reference Point {m}
+    1.633700,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_1_DaylRefPt2,  !- Name
+    Perimeter_ZN_1,          !- Zone Name
+    9.144000,                !- X-Coordinate of Reference Point {m}
+    3.267500,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:Controls,
+    Perimeter_ZN_2_DaylCtrl, !- Name
+    Perimeter_ZN_2,          !- Zone Name
+    SplitFlux,               !- Daylighting Method
+    ,                        !- Availability Schedule Name
+    Stepped,                 !- Lighting Control Type
+    0.3,                     !- Minimum Input Power Fraction for Continuous or ContinuousOff Dimming Control
+    0.2,                     !- Minimum Light Output Fraction for Continuous or ContinuousOff Dimming Control
+    3,                       !- Number of Stepped Control Steps
+    1.0,                     !- Probability Lighting will be Reset When Needed in Manual Stepped Control
+    Perimeter_ZN_2_DaylRefPt1,  !- Glare Calculation Daylighting Reference Point Name
+    90.0,                    !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
+    22.0,                    !- Maximum Allowable Discomfort Glare Index
+    ,                        !- DElight Gridding Resolution {m2}
+    Perimeter_ZN_2_DaylRefPt1,  !- Daylighting Reference Point 1 Name
+    0.2399,                  !- Fraction of Zone Controlled by Reference Point 1
+    375.0,                   !- Illuminance Setpoint at Reference Point 1 {lux}
+    Perimeter_ZN_2_DaylRefPt2,  !- Daylighting Reference Point 2 Name
+    0.0302,                  !- Fraction of Zone Controlled by Reference Point 2
+    375.0;                   !- Illuminance Setpoint at Reference Point 2 {lux}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_2_DaylRefPt1,  !- Name
+    Perimeter_ZN_2,          !- Zone Name
+    26.089800,               !- X-Coordinate of Reference Point {m}
+    9.144000,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_2_DaylRefPt2,  !- Name
+    Perimeter_ZN_2,          !- Zone Name
+    24.456100,               !- X-Coordinate of Reference Point {m}
+    9.144000,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:Controls,
+    Perimeter_ZN_3_DaylCtrl, !- Name
+    Perimeter_ZN_3,          !- Zone Name
+    SplitFlux,               !- Daylighting Method
+    ,                        !- Availability Schedule Name
+    Stepped,                 !- Lighting Control Type
+    0.3,                     !- Minimum Input Power Fraction for Continuous or ContinuousOff Dimming Control
+    0.2,                     !- Minimum Light Output Fraction for Continuous or ContinuousOff Dimming Control
+    3,                       !- Number of Stepped Control Steps
+    1.0,                     !- Probability Lighting will be Reset When Needed in Manual Stepped Control
+    Perimeter_ZN_3_DaylRefPt1,  !- Glare Calculation Daylighting Reference Point Name
+    0.0,                     !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
+    22.0,                    !- Maximum Allowable Discomfort Glare Index
+    ,                        !- DElight Gridding Resolution {m2}
+    Perimeter_ZN_3_DaylRefPt1,  !- Daylighting Reference Point 1 Name
+    0.2399,                  !- Fraction of Zone Controlled by Reference Point 1
+    375.0,                   !- Illuminance Setpoint at Reference Point 1 {lux}
+    Perimeter_ZN_3_DaylRefPt2,  !- Daylighting Reference Point 2 Name
+    0.0302,                  !- Fraction of Zone Controlled by Reference Point 2
+    375.0;                   !- Illuminance Setpoint at Reference Point 2 {lux}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_3_DaylRefPt1,  !- Name
+    Perimeter_ZN_3,          !- Zone Name
+    18.288000,               !- X-Coordinate of Reference Point {m}
+    16.825000,               !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_3_DaylRefPt2,  !- Name
+    Perimeter_ZN_3,          !- Zone Name
+    18.288000,               !- X-Coordinate of Reference Point {m}
+    15.192500,               !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:Controls,
+    Perimeter_ZN_4_DaylCtrl, !- Name
+    Perimeter_ZN_4,          !- Zone Name
+    SplitFlux,               !- Daylighting Method
+    ,                        !- Availability Schedule Name
+    Stepped,                 !- Lighting Control Type
+    0.3,                     !- Minimum Input Power Fraction for Continuous or ContinuousOff Dimming Control
+    0.2,                     !- Minimum Light Output Fraction for Continuous or ContinuousOff Dimming Control
+    3,                       !- Number of Stepped Control Steps
+    1.0,                     !- Probability Lighting will be Reset When Needed in Manual Stepped Control
+    Perimeter_ZN_4_DaylRefPt1,  !- Glare Calculation Daylighting Reference Point Name
+    270.0,                   !- Glare Calculation Azimuth Angle of View Direction Clockwise from Zone y-Axis {deg}
+    22.0,                    !- Maximum Allowable Discomfort Glare Index
+    ,                        !- DElight Gridding Resolution {m2}
+    Perimeter_ZN_4_DaylRefPt1,  !- Daylighting Reference Point 1 Name
+    0.2399,                  !- Fraction of Zone Controlled by Reference Point 1
+    375.0,                   !- Illuminance Setpoint at Reference Point 1 {lux}
+    Perimeter_ZN_4_DaylRefPt2,  !- Daylighting Reference Point 2 Name
+    0.0302,                  !- Fraction of Zone Controlled by Reference Point 2
+    375.0;                   !- Illuminance Setpoint at Reference Point 2 {lux}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_4_DaylRefPt1,  !- Name
+    Perimeter_ZN_4,          !- Zone Name
+    1.633700,                !- X-Coordinate of Reference Point {m}
+    9.144000,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+
+  Daylighting:ReferencePoint,
+    Perimeter_ZN_4_DaylRefPt2,  !- Name
+    Perimeter_ZN_4,          !- Zone Name
+    3.267500,                !- X-Coordinate of Reference Point {m}
+    9.144000,                !- Y-Coordinate of Reference Point {m}
+    0.762000;                !- Z-Coordinate of Reference Point {m}
+$End:Daylighting_2013_2016$
+
+$Start:Inf_ZN1_2004_2007$
+  ZoneInfiltration:DesignFlowRate,
+    Perimeter_ZN_1_Infiltration,  !- Name
+    Perimeter_ZN_1,          !- Zone or ZoneList Name
+    INFIL_QUARTER_ON_SCH,    !- Schedule Name
+    Flow/ExteriorWallArea,   !- Design Flow Rate Calculation Method
+    0,                       !- Design Flow Rate {m3/s}
+    ,                        !- Flow per Zone Floor Area {m3/s-m2}
+    0.001024128,             !- Flow per Exterior Surface Area {m3/s-m2}
+    ,                        !- Air Changes per Hour {1/hr}
+    0,                       !- Constant Term Coefficient
+    0.0000,                  !- Temperature Term Coefficient
+    0.2240,                  !- Velocity Term Coefficient
+    0.0000;                  !- Velocity Squared Term Coefficient
+$End:Inf_ZN1_2004_2007$
+
+$Start:Inf_ZN1_2010_2013_2016$
+  ZoneInfiltration:DesignFlowRate,
+    Perimeter_ZN_1_Infiltration,  !- Name
+    Perimeter_ZN_1,          !- Zone or ZoneList Name
+    INFIL_QUARTER_ON_SCH,    !- Schedule Name
+    Flow/ExteriorWallArea,   !- Design Flow Rate Calculation Method
+    0,                       !- Design Flow Rate {m3/s}
+    ,                        !- Flow per Zone Floor Area {m3/s-m2}
+    0.00056896,              !- Flow per Exterior Surface Area {m3/s-m2}
+    ,                        !- Air Changes per Hour {1/hr}
+    0,                       !- Constant Term Coefficient
+    0.0000,                  !- Temperature Term Coefficient
+    0.2240,                  !- Velocity Term Coefficient
+    0.0000;                  !- Velocity Squared Term Coefficient
+$End:Inf_ZN1_2010_2013_2016$
+
+$Start:Inf_ZN2_2004_2007$
+  ZoneInfiltration:DesignFlowRate,
+    Perimeter_ZN_2_Infiltration,  !- Name
+    Perimeter_ZN_2,          !- Zone or ZoneList Name
+    INFIL_QUARTER_ON_SCH,    !- Schedule Name
+    Flow/ExteriorWallArea,   !- Design Flow Rate Calculation Method
+    0,                       !- Design Flow Rate {m3/s}
+    ,                        !- Flow per Zone Floor Area {m3/s-m2}
+    0.001024128,             !- Flow per Exterior Surface Area {m3/s-m2}
+    ,                        !- Air Changes per Hour {1/hr}
+    0,                       !- Constant Term Coefficient
+    0.0000,                  !- Temperature Term Coefficient
+    0.2240,                  !- Velocity Term Coefficient
+    0.0000;                  !- Velocity Squared Term Coefficient
+$End:Inf_ZN2_2004_2007$
+
+$Start:Inf_ZN2_2010_2013_2016$
+  ZoneInfiltration:DesignFlowRate,
+    Perimeter_ZN_2_Infiltration,  !- Name
+    Perimeter_ZN_2,          !- Zone or ZoneList Name
+    INFIL_QUARTER_ON_SCH,    !- Schedule Name
+    Flow/ExteriorWallArea,   !- Design Flow Rate Calculation Method
+    0,                       !- Design Flow Rate {m3/s}
+    ,                        !- Flow per Zone Floor Area {m3/s-m2}
+    0.00056896,              !- Flow per Exterior Surface Area {m3/s-m2}
+    ,                        !- Air Changes per Hour {1/hr}
+    0,                       !- Constant Term Coefficient
+    0.0000,                  !- Temperature Term Coefficient
+    0.2240,                  !- Velocity Term Coefficient
+    0.0000;                  !- Velocity Squared Term Coefficient
+$End:Inf_ZN2_2010_2013_2016$
+
+$Start:Inf_ZN3_2004_2007$
+  ZoneInfiltration:DesignFlowRate,
+    Perimeter_ZN_3_Infiltration,  !- Name
+    Perimeter_ZN_3,          !- Zone or ZoneList Name
+    INFIL_QUARTER_ON_SCH,    !- Schedule Name
+    Flow/ExteriorWallArea,   !- Design Flow Rate Calculation Method
+    0,                       !- Design Flow Rate {m3/s}
+    ,                        !- Flow per Zone Floor Area {m3/s-m2}
+    0.001024128,             !- Flow per Exterior Surface Area {m3/s-m2}
+    ,                        !- Air Changes per Hour {1/hr}
+    0,                       !- Constant Term Coefficient
+    0.0000,                  !- Temperature Term Coefficient
+    0.2240,                  !- Velocity Term Coefficient
+    0.0000;                  !- Velocity Squared Term Coefficient
+$End:Inf_ZN3_2004_2007$
+
+$Start:Inf_ZN3_2010_2013_2016$
+  ZoneInfiltration:DesignFlowRate,
+    Perimeter_ZN_3_Infiltration,  !- Name
+    Perimeter_ZN_3,          !- Zone or ZoneList Name
+    INFIL_QUARTER_ON_SCH,    !- Schedule Name
+    Flow/ExteriorWallArea,   !- Design Flow Rate Calculation Method
+    0,                       !- Design Flow Rate {m3/s}
+    ,                        !- Flow per Zone Floor Area {m3/s-m2}
+    0.00056896,              !- Flow per Exterior Surface Area {m3/s-m2}
+    ,                        !- Air Changes per Hour {1/hr}
+    0,                       !- Constant Term Coefficient
+    0.0000,                  !- Temperature Term Coefficient
+    0.2240,                  !- Velocity Term Coefficient
+    0.0000;                  !- Velocity Squared Term Coefficient
+$End:Inf_ZN3_2010_2013_2016$
+
+$Start:Inf_ZN4_2004_2007$
+  ZoneInfiltration:DesignFlowRate,
+    Perimeter_ZN_4_Infiltration,  !- Name
+    Perimeter_ZN_4,          !- Zone or ZoneList Name
+    INFIL_QUARTER_ON_SCH,    !- Schedule Name
+    Flow/ExteriorWallArea,   !- Design Flow Rate Calculation Method
+    0,                       !- Design Flow Rate {m3/s}
+    ,                        !- Flow per Zone Floor Area {m3/s-m2}
+    0.001024128,             !- Flow per Exterior Surface Area {m3/s-m2}
+    ,                        !- Air Changes per Hour {1/hr}
+    0,                       !- Constant Term Coefficient
+    0.0000,                  !- Temperature Term Coefficient
+    0.2240,                  !- Velocity Term Coefficient
+    0.0000;                  !- Velocity Squared Term Coefficient
+$End:Inf_ZN4_2004_2007$
+
+$Start:Inf_ZN4_2010_2013_2016$
+  ZoneInfiltration:DesignFlowRate,
+    Perimeter_ZN_4_Infiltration,  !- Name
+    Perimeter_ZN_4,          !- Zone or ZoneList Name
+    INFIL_QUARTER_ON_SCH,    !- Schedule Name
+    Flow/ExteriorWallArea,   !- Design Flow Rate Calculation Method
+    0,                       !- Design Flow Rate {m3/s}
+    ,                        !- Flow per Zone Floor Area {m3/s-m2}
+    0.00056896,              !- Flow per Exterior Surface Area {m3/s-m2}
+    ,                        !- Air Changes per Hour {1/hr}
+    0,                       !- Constant Term Coefficient
+    0.0000,                  !- Temperature Term Coefficient
+    0.2240,                  !- Velocity Term Coefficient
+    0.0000;                  !- Velocity Squared Term Coefficient
+$End:Inf_ZN4_2010_2013_2016$
+
+$Start:Ext_Lig_2004_2007$
+  Exterior:Lights,
+    Exterior_Lights,         !- Name
+    Exterior_Lgt_ALWAYS_ON,  !- Schedule Name
+    1582.575,                !- Design Level {W}
+    AstronomicalClock,       !- Control Option
+    General;                 !- End-Use Subcategory
+$End:Ext_Lig_2004_2007$
+
+$Start:Ext_Lig_2010_2013$
+  Exterior:Lights,
+    Exterior_Lights_a,       !- Name
+    Exterior_lighting_schedule_a,  !- Schedule Name
+    50.7,                    !- Design Level {W}
+    AstronomicalClock,       !- Control Option
+    General;                 !- End-Use Subcategory
+
+  Exterior:Lights,
+    Exterior_Lights_b,       !- Name
+    Exterior_lighting_schedule_b,  !- Schedule Name
+    861.3,                   !- Design Level {W}
+    AstronomicalClock,       !- Control Option
+    General;                 !- End-Use Subcategory
+$End:Ext_Lig_2010_2013$
+
+$Start:Ext_Lig_2016$
+  Exterior:Lights,
+    Exterior_Lights_a,       !- Name
+    Exterior_lighting_schedule_a,  !- Schedule Name
+    50.7,                    !- Design Level {W}
+    AstronomicalClock,       !- Control Option
+    General;                 !- End-Use Subcategory
+
+  Exterior:Lights,
+    Exterior_Lights_b,       !- Name
+    Exterior_lighting_schedule_b_2016,  !- Schedule Name
+    115.1,                   !- Design Level {W}
+    AstronomicalClock,       !- Control Option
+    General;                 !- End-Use Subcategory
+
+  Exterior:Lights,
+    Exterior_Lights_c,       !- Name
+    Exterior_lighting_schedule_c_2016,  !- Schedule Name
+    445.5,                   !- Design Level {W}
+    AstronomicalClock,       !- Control Option
+    General;                 !- End-Use Subcategory
+$End:Ext_Lig_2016$
+
+$Start:Fan_2004_2007$
+  Fan:OnOff,
+    PSZ-AC:1 Fan,            !- Name
+    HVACOperationSchd,       !- Availability Schedule Name
+    0.53625,                 !- Fan Total Efficiency
+    622.5,                   !- Pressure Rise {Pa}
+    AUTOSIZE,                !- Maximum Flow Rate {m3/s}
+    0.825,                   !- Motor Efficiency
+    1.0,                     !- Motor In Airstream Fraction
+    PSZ-AC:1_OA-PSZ-AC:1_FanNode,  !- Air Inlet Node Name
+    PSZ-AC:1_Fan-PSZ-AC:1_CoolCNode,  !- Air Outlet Node Name
+    ,                        !- Fan Power Ratio Function of Speed Ratio Curve Name
+    0.53625,                 !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    Fan Energy;              !- End-Use Subcategory
+
+  Fan:OnOff,
+    PSZ-AC:2 Fan,            !- Name
+    HVACOperationSchd,       !- Availability Schedule Name
+    0.53625,                 !- Fan Total Efficiency
+    622.5,                   !- Pressure Rise {Pa}
+    AUTOSIZE,                !- Maximum Flow Rate {m3/s}
+    0.825,                   !- Motor Efficiency
+    1.0,                     !- Motor In Airstream Fraction
+    PSZ-AC:2_OA-PSZ-AC:2_FanNode,  !- Air Inlet Node Name
+    PSZ-AC:2_Fan-PSZ-AC:2_CoolCNode,  !- Air Outlet Node Name
+    ,                        !- Fan Power Ratio Function of Speed Ratio Curve Name
+    0.53625,                 !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    Fan Energy;              !- End-Use Subcategory
+
+  Fan:OnOff,
+    PSZ-AC:3 Fan,            !- Name
+    HVACOperationSchd,       !- Availability Schedule Name
+    0.53625,                 !- Fan Total Efficiency
+    622.5,                   !- Pressure Rise {Pa}
+    AUTOSIZE,                !- Maximum Flow Rate {m3/s}
+    0.825,                   !- Motor Efficiency
+    1.0,                     !- Motor In Airstream Fraction
+    PSZ-AC:3_OA-PSZ-AC:3_FanNode,  !- Air Inlet Node Name
+    PSZ-AC:3_Fan-PSZ-AC:3_CoolCNode,  !- Air Outlet Node Name
+    ,                        !- Fan Power Ratio Function of Speed Ratio Curve Name
+    0.53625,                 !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    Fan Energy;              !- End-Use Subcategory
+
+  Fan:OnOff,
+    PSZ-AC:4 Fan,            !- Name
+    HVACOperationSchd,       !- Availability Schedule Name
+    0.53625,                 !- Fan Total Efficiency
+    622.5,                   !- Pressure Rise {Pa}
+    AUTOSIZE,                !- Maximum Flow Rate {m3/s}
+    0.825,                   !- Motor Efficiency
+    1.0,                     !- Motor In Airstream Fraction
+    PSZ-AC:4_OA-PSZ-AC:4_FanNode,  !- Air Inlet Node Name
+    PSZ-AC:4_Fan-PSZ-AC:4_CoolCNode,  !- Air Outlet Node Name
+    ,                        !- Fan Power Ratio Function of Speed Ratio Curve Name
+    0.53625,                 !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    Fan Energy;              !- End-Use Subcategory
+
+  Fan:OnOff,
+    PSZ-AC:5 Fan,            !- Name
+    HVACOperationSchd,       !- Availability Schedule Name
+    0.53625,                 !- Fan Total Efficiency
+    622.5,                   !- Pressure Rise {Pa}
+    AUTOSIZE,                !- Maximum Flow Rate {m3/s}
+    0.825,                   !- Motor Efficiency
+    1.0,                     !- Motor In Airstream Fraction
+    PSZ-AC:5_OA-PSZ-AC:5_FanNode,  !- Air Inlet Node Name
+    PSZ-AC:5_Fan-PSZ-AC:5_CoolCNode,  !- Air Outlet Node Name
+    ,                        !- Fan Power Ratio Function of Speed Ratio Curve Name
+    0.53625,                 !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    Fan Energy;              !- End-Use Subcategory
+$End:Fan_2004_2007$
+
+$Start:Fan_2010_2013_2016$
+
+  Fan:OnOff,
+    PSZ-AC:1 Fan,            !- Name
+    HVACOperationSchd,       !- Availability Schedule Name
+    0.55575,                 !- Fan Total Efficiency
+    622.5,                   !- Pressure Rise {Pa}
+    AUTOSIZE,                !- Maximum Flow Rate {m3/s}
+    0.855,                   !- Motor Efficiency
+    1.0,                     !- Motor In Airstream Fraction
+    PSZ-AC:1_OA-PSZ-AC:1_FanNode,  !- Air Inlet Node Name
+    PSZ-AC:1_Fan-PSZ-AC:1_CoolCNode,  !- Air Outlet Node Name
+    ,                        !- Fan Power Ratio Function of Speed Ratio Curve Name
+    0.55575,                 !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    Fan Energy;              !- End-Use Subcategory
+
+  Fan:OnOff,
+    PSZ-AC:2 Fan,            !- Name
+    HVACOperationSchd,       !- Availability Schedule Name
+    0.55575,                 !- Fan Total Efficiency
+    622.5,                   !- Pressure Rise {Pa}
+    AUTOSIZE,                !- Maximum Flow Rate {m3/s}
+    0.855,                   !- Motor Efficiency
+    1.0,                     !- Motor In Airstream Fraction
+    PSZ-AC:2_OA-PSZ-AC:2_FanNode,  !- Air Inlet Node Name
+    PSZ-AC:2_Fan-PSZ-AC:2_CoolCNode,  !- Air Outlet Node Name
+    ,                        !- Fan Power Ratio Function of Speed Ratio Curve Name
+    0.55575,                 !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    Fan Energy;              !- End-Use Subcategory
+
+  Fan:OnOff,
+    PSZ-AC:3 Fan,            !- Name
+    HVACOperationSchd,       !- Availability Schedule Name
+    0.55575,                 !- Fan Total Efficiency
+    622.5,                   !- Pressure Rise {Pa}
+    AUTOSIZE,                !- Maximum Flow Rate {m3/s}
+    0.855,                   !- Motor Efficiency
+    1.0,                     !- Motor In Airstream Fraction
+    PSZ-AC:3_OA-PSZ-AC:3_FanNode,  !- Air Inlet Node Name
+    PSZ-AC:3_Fan-PSZ-AC:3_CoolCNode,  !- Air Outlet Node Name
+    ,                        !- Fan Power Ratio Function of Speed Ratio Curve Name
+    0.55575,                 !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    Fan Energy;              !- End-Use Subcategory
+
+  Fan:OnOff,
+    PSZ-AC:4 Fan,            !- Name
+    HVACOperationSchd,       !- Availability Schedule Name
+    0.55575,                 !- Fan Total Efficiency
+    622.5,                   !- Pressure Rise {Pa}
+    AUTOSIZE,                !- Maximum Flow Rate {m3/s}
+    0.855,                   !- Motor Efficiency
+    1.0,                     !- Motor In Airstream Fraction
+    PSZ-AC:4_OA-PSZ-AC:4_FanNode,  !- Air Inlet Node Name
+    PSZ-AC:4_Fan-PSZ-AC:4_CoolCNode,  !- Air Outlet Node Name
+    ,                        !- Fan Power Ratio Function of Speed Ratio Curve Name
+    0.55575,                 !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    Fan Energy;              !- End-Use Subcategory
+
+  Fan:OnOff,
+    PSZ-AC:5 Fan,            !- Name
+    HVACOperationSchd,       !- Availability Schedule Name
+    0.55575,                 !- Fan Total Efficiency
+    622.5,                   !- Pressure Rise {Pa}
+    AUTOSIZE,                !- Maximum Flow Rate {m3/s}
+    0.855,                   !- Motor Efficiency
+    1.0,                     !- Motor In Airstream Fraction
+    PSZ-AC:5_OA-PSZ-AC:5_FanNode,  !- Air Inlet Node Name
+    PSZ-AC:5_Fan-PSZ-AC:5_CoolCNode,  !- Air Outlet Node Name
+    ,                        !- Fan Power Ratio Function of Speed Ratio Curve Name
+    0.55575,                 !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    Fan Energy;              !- End-Use Subcategory
+$End:Fan_2010_2013_2016$
+
+$Start:OA_Controller_2004_2007$
+  Controller:OutdoorAir,
+    PSZ-AC:1_OA_Controller,  !- Name
+    PSZ-AC:1_OARelief Node,  !- Relief Air Outlet Node Name
+    PSZ-AC:1 Supply Equipment Inlet Node,  !- Return Air Node Name
+    PSZ-AC:1_OA-PSZ-AC:1_FanNode,  !- Mixed Air Node Name
+    PSZ-AC:1_OAInlet Node,   !- Actuator Node Name
+    AUTOSIZE,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    AUTOSIZE,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    NoEconomizer,            !- Economizer Control Type
+    ModulateFlow,            !- Economizer Control Action Type
+    28.0,                    !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    64000.0,                 !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Electronic Enthalpy Limit Curve Name
+    0.0,                     !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    LockoutWithCompressor,   !- Lockout Type
+    FixedMinimum,            !- Minimum Limit Type
+    MinOA_Sched;             !- Minimum Outdoor Air Schedule Name
+
+  Controller:OutdoorAir,
+    PSZ-AC:2_OA_Controller,  !- Name
+    PSZ-AC:2_OARelief Node,  !- Relief Air Outlet Node Name
+    PSZ-AC:2 Supply Equipment Inlet Node,  !- Return Air Node Name
+    PSZ-AC:2_OA-PSZ-AC:2_FanNode,  !- Mixed Air Node Name
+    PSZ-AC:2_OAInlet Node,   !- Actuator Node Name
+    AUTOSIZE,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    AUTOSIZE,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    NoEconomizer,            !- Economizer Control Type
+    ModulateFlow,            !- Economizer Control Action Type
+    28.0,                    !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    64000.0,                 !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Electronic Enthalpy Limit Curve Name
+    0.0,                     !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    LockoutWithCompressor,   !- Lockout Type
+    FixedMinimum,            !- Minimum Limit Type
+    MinOA_Sched;             !- Minimum Outdoor Air Schedule Name
+
+  Controller:OutdoorAir,
+    PSZ-AC:3_OA_Controller,  !- Name
+    PSZ-AC:3_OARelief Node,  !- Relief Air Outlet Node Name
+    PSZ-AC:3 Supply Equipment Inlet Node,  !- Return Air Node Name
+    PSZ-AC:3_OA-PSZ-AC:3_FanNode,  !- Mixed Air Node Name
+    PSZ-AC:3_OAInlet Node,   !- Actuator Node Name
+    AUTOSIZE,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    AUTOSIZE,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    NoEconomizer,            !- Economizer Control Type
+    ModulateFlow,            !- Economizer Control Action Type
+    28.0,                    !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    64000.0,                 !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Electronic Enthalpy Limit Curve Name
+    0.0,                     !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    LockoutWithCompressor,   !- Lockout Type
+    FixedMinimum,            !- Minimum Limit Type
+    MinOA_Sched;             !- Minimum Outdoor Air Schedule Name
+
+  Controller:OutdoorAir,
+    PSZ-AC:4_OA_Controller,  !- Name
+    PSZ-AC:4_OARelief Node,  !- Relief Air Outlet Node Name
+    PSZ-AC:4 Supply Equipment Inlet Node,  !- Return Air Node Name
+    PSZ-AC:4_OA-PSZ-AC:4_FanNode,  !- Mixed Air Node Name
+    PSZ-AC:4_OAInlet Node,   !- Actuator Node Name
+    AUTOSIZE,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    AUTOSIZE,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    NoEconomizer,            !- Economizer Control Type
+    ModulateFlow,            !- Economizer Control Action Type
+    28.0,                    !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    64000.0,                 !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Electronic Enthalpy Limit Curve Name
+    0.0,                     !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    LockoutWithCompressor,   !- Lockout Type
+    FixedMinimum,            !- Minimum Limit Type
+    MinOA_Sched;             !- Minimum Outdoor Air Schedule Name
+
+  Controller:OutdoorAir,
+    PSZ-AC:5_OA_Controller,  !- Name
+    PSZ-AC:5_OARelief Node,  !- Relief Air Outlet Node Name
+    PSZ-AC:5 Supply Equipment Inlet Node,  !- Return Air Node Name
+    PSZ-AC:5_OA-PSZ-AC:5_FanNode,  !- Mixed Air Node Name
+    PSZ-AC:5_OAInlet Node,   !- Actuator Node Name
+    AUTOSIZE,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    AUTOSIZE,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    NoEconomizer,            !- Economizer Control Type
+    ModulateFlow,            !- Economizer Control Action Type
+    28.0,                    !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    64000.0,                 !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Electronic Enthalpy Limit Curve Name
+    0.0,                     !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    LockoutWithCompressor,   !- Lockout Type
+    FixedMinimum,            !- Minimum Limit Type
+    MinOA_Sched;             !- Minimum Outdoor Air Schedule Name
+$End:OA_Controller_2004_2007$
+
+$Start:OA_Controller_2010_2013_2016$
+  Controller:OutdoorAir,
+    PSZ-AC:1_OA_Controller,  !- Name
+    PSZ-AC:1_OARelief Node,  !- Relief Air Outlet Node Name
+    PSZ-AC:1 Supply Equipment Inlet Node,  !- Return Air Node Name
+    PSZ-AC:1_OA-PSZ-AC:1_FanNode,  !- Mixed Air Node Name
+    PSZ-AC:1_OAInlet Node,   !- Actuator Node Name
+    AUTOSIZE,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    AUTOSIZE,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    NoEconomizer,            !- Economizer Control Type
+    ModulateFlow,            !- Economizer Control Action Type
+    28.0,                    !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    64000.0,                 !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Electronic Enthalpy Limit Curve Name
+    0.0,                     !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    NoLockout,               !- Lockout Type
+    FixedMinimum,            !- Minimum Limit Type
+    MinOA_Sched;             !- Minimum Outdoor Air Schedule Name
+
+  Controller:OutdoorAir,
+    PSZ-AC:2_OA_Controller,  !- Name
+    PSZ-AC:2_OARelief Node,  !- Relief Air Outlet Node Name
+    PSZ-AC:2 Supply Equipment Inlet Node,  !- Return Air Node Name
+    PSZ-AC:2_OA-PSZ-AC:2_FanNode,  !- Mixed Air Node Name
+    PSZ-AC:2_OAInlet Node,   !- Actuator Node Name
+    AUTOSIZE,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    AUTOSIZE,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    NoEconomizer,            !- Economizer Control Type
+    ModulateFlow,            !- Economizer Control Action Type
+    28.0,                    !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    64000.0,                 !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Electronic Enthalpy Limit Curve Name
+    0.0,                     !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    NoLockout,               !- Lockout Type
+    FixedMinimum,            !- Minimum Limit Type
+    MinOA_Sched;             !- Minimum Outdoor Air Schedule Name
+
+  Controller:OutdoorAir,
+    PSZ-AC:3_OA_Controller,  !- Name
+    PSZ-AC:3_OARelief Node,  !- Relief Air Outlet Node Name
+    PSZ-AC:3 Supply Equipment Inlet Node,  !- Return Air Node Name
+    PSZ-AC:3_OA-PSZ-AC:3_FanNode,  !- Mixed Air Node Name
+    PSZ-AC:3_OAInlet Node,   !- Actuator Node Name
+    AUTOSIZE,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    AUTOSIZE,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    NoEconomizer,            !- Economizer Control Type
+    ModulateFlow,            !- Economizer Control Action Type
+    28.0,                    !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    64000.0,                 !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Electronic Enthalpy Limit Curve Name
+    0.0,                     !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    NoLockout,               !- Lockout Type
+    FixedMinimum,            !- Minimum Limit Type
+    MinOA_Sched;             !- Minimum Outdoor Air Schedule Name
+
+  Controller:OutdoorAir,
+    PSZ-AC:4_OA_Controller,  !- Name
+    PSZ-AC:4_OARelief Node,  !- Relief Air Outlet Node Name
+    PSZ-AC:4 Supply Equipment Inlet Node,  !- Return Air Node Name
+    PSZ-AC:4_OA-PSZ-AC:4_FanNode,  !- Mixed Air Node Name
+    PSZ-AC:4_OAInlet Node,   !- Actuator Node Name
+    AUTOSIZE,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    AUTOSIZE,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    NoEconomizer,            !- Economizer Control Type
+    ModulateFlow,            !- Economizer Control Action Type
+    28.0,                    !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    64000.0,                 !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Electronic Enthalpy Limit Curve Name
+    0.0,                     !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    NoLockout,               !- Lockout Type
+    FixedMinimum,            !- Minimum Limit Type
+    MinOA_Sched;             !- Minimum Outdoor Air Schedule Name
+
+  Controller:OutdoorAir,
+    PSZ-AC:5_OA_Controller,  !- Name
+    PSZ-AC:5_OARelief Node,  !- Relief Air Outlet Node Name
+    PSZ-AC:5 Supply Equipment Inlet Node,  !- Return Air Node Name
+    PSZ-AC:5_OA-PSZ-AC:5_FanNode,  !- Mixed Air Node Name
+    PSZ-AC:5_OAInlet Node,   !- Actuator Node Name
+    AUTOSIZE,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    AUTOSIZE,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    NoEconomizer,            !- Economizer Control Type
+    ModulateFlow,            !- Economizer Control Action Type
+    28.0,                    !- Economizer Maximum Limit Dry-Bulb Temperature {C}
+    64000.0,                 !- Economizer Maximum Limit Enthalpy {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Electronic Enthalpy Limit Curve Name
+    0.0,                     !- Economizer Minimum Limit Dry-Bulb Temperature {C}
+    NoLockout,               !- Lockout Type
+    FixedMinimum,            !- Minimum Limit Type
+    MinOA_Sched;             !- Minimum Outdoor Air Schedule Name
+$End:OA_Controller_2010_2013_2016$
+
+$Start:SWH_2004_2007$
+  WaterHeater:Mixed,
+    SHWSys1 Water Heater,    !- Name
+    0.1514,                  !- Tank Volume {m3}
+    SHWSys1 Water Heater Setpoint Temperature Schedule,  !- Setpoint Temperature Schedule Name
+    2.0,                     !- Deadband Temperature Difference {deltaC}
+    82.2222,                 !- Maximum Temperature Limit {C}
+    Cycle,                   !- Heater Control Type
+    11722.84,                !- Heater Maximum Capacity {W}
+    ,                        !- Heater Minimum Capacity {W}
+    ,                        !- Heater Ignition Minimum Flow Rate {m3/s}
+    ,                        !- Heater Ignition Delay {s}
+    electricity,             !- Heater Fuel Type
+    1,                       !- Heater Thermal Efficiency
+    ,                        !- Part Load Factor Curve Name
+    572,                     !- Off Cycle Parasitic Fuel Consumption Rate {W}
+    electricity,             !- Off Cycle Parasitic Fuel Type
+    0.8,                     !- Off Cycle Parasitic Heat Fraction to Tank
+    572,                     !- On Cycle Parasitic Fuel Consumption Rate {W}
+    electricity,             !- On Cycle Parasitic Fuel Type
+    ,                        !- On Cycle Parasitic Heat Fraction to Tank
+    zone,                    !- Ambient Temperature Indicator
+    ,                        !- Ambient Temperature Schedule Name
+    CORE_ZN,                 !- Ambient Temperature Zone Name
+    ,                        !- Ambient Temperature Outdoor Air Node Name
+    1.870180469,             !- Off Cycle Loss Coefficient to Ambient Temperature {W/K}
+    ,                        !- Off Cycle Loss Fraction to Zone
+    1.870180469,             !- On Cycle Loss Coefficient to Ambient Temperature {W/K}
+    ,                        !- On Cycle Loss Fraction to Zone
+    4.0480E-06,              !- Peak Use Flow Rate {m3/s}
+    BLDG_SWH_SCH;            !- Use Flow Rate Fraction Schedule Name
+$End:SWH_2004_2007$
+
+$Start:SWH_2010_2013_2016$
+  WaterHeater:Mixed,
+    SHWSys1 Water Heater,    !- Name
+    0.1514,                  !- Tank Volume {m3}
+    SHWSys1 Water Heater Setpoint Temperature Schedule,  !- Setpoint Temperature Schedule Name
+    2.0,                     !- Deadband Temperature Difference {deltaC}
+    82.2222,                 !- Maximum Temperature Limit {C}
+    Cycle,                   !- Heater Control Type
+    11722.84,                !- Heater Maximum Capacity {W}
+    ,                        !- Heater Minimum Capacity {W}
+    ,                        !- Heater Ignition Minimum Flow Rate {m3/s}
+    ,                        !- Heater Ignition Delay {s}
+    electricity,             !- Heater Fuel Type
+    1,                       !- Heater Thermal Efficiency
+    ,                        !- Part Load Factor Curve Name
+    571,                     !- Off Cycle Parasitic Fuel Consumption Rate {W}
+    electricity,             !- Off Cycle Parasitic Fuel Type
+    0.8,                     !- Off Cycle Parasitic Heat Fraction to Tank
+    571,                     !- On Cycle Parasitic Fuel Consumption Rate {W}
+    electricity,             !- On Cycle Parasitic Fuel Type
+    ,                        !- On Cycle Parasitic Heat Fraction to Tank
+    zone,                    !- Ambient Temperature Indicator
+    ,                        !- Ambient Temperature Schedule Name
+    CORE_ZN,                 !- Ambient Temperature Zone Name
+    ,                        !- Ambient Temperature Outdoor Air Node Name
+    1.205980747,             !- Off Cycle Loss Coefficient to Ambient Temperature {W/K}
+    ,                        !- Off Cycle Loss Fraction to Zone
+    1.205980747,             !- On Cycle Loss Coefficient to Ambient Temperature {W/K}
+    ,                        !- On Cycle Loss Fraction to Zone
+    4.0480E-06,              !- Peak Use Flow Rate {m3/s}
+    BLDG_SWH_SCH;            !- Use Flow Rate Fraction Schedule Name
+$End:SWH_2010_2013_2016$
+
+$Start:Ins_Roof_2004_2007_2010$
+  Material:NoMass,
+    Nonres_Roof_Insulation,  !- Name
+    MediumSmooth,            !- Roughness
+    4.89189868807721,        !- Thermal Resistance {m2-K/W}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+$End:Ins_Roof_2004_2007_2010$
+
+$Start:Ins_Roof_2013_2016$
+  Material:NoMass,
+    Nonres_Roof_Insulation,  !- Name
+    MediumSmooth,            !- Roughness
+    6.23478687961654,        !- Thermal Resistance {m2-K/W}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+$End:Ins_Roof_2013_2016$
+
+$Start:Window_2004_2007_2010$
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    1.390,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    1.390,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    3.220,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    3.220,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    6.010,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    6.010,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    7.840,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    7.840,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    10.620,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    10.620,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    12.450,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    12.450,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    15.240,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    15.240,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    17.070,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    17.070,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_5,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    19.850,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    19.850,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    21.680,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    21.680,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_6,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    24.470,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    24.470,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    26.300,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    26.300,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_door,  !- Name
+    GlassDoor,               !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    12.930,0.0000,2.1340,  !- X,Y,Z ==> Vertex 1 {m}
+    12.930,0.0000,0.0000,  !- X,Y,Z ==> Vertex 2 {m}
+    14.760,0.0000,0.0000,  !- X,Y,Z ==> Vertex 3 {m}
+    14.760,0.0000,2.1340;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,15.2400,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,15.2400,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,17.0700,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,17.0700,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,10.6200,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,10.6200,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,12.4500,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,12.4500,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,6.0100,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,6.0100,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,7.8400,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,7.8400,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,1.3900,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,1.3900,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,3.2200,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,3.2200,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    26.300,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    26.300,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    24.470,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    24.470,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    21.680,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    21.680,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    19.850,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    19.850,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    17.070,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    17.070,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    15.240,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    15.240,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    12.450,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    12.450,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    10.620,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    10.620,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_5,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    7.840,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    7.840,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    6.010,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    6.010,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_6,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    3.220,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    3.220,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    1.390,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    1.390,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,3.2200,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,3.2200,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,1.3900,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,1.3900,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,7.8400,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,7.8400,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,6.0100,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,6.0100,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,12.4500,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,12.4500,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,10.6200,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,10.6200,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_1.22_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,17.0700,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,17.0700,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,15.2400,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,15.2400,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+$End:Window_2004_2007_2010$
+
+$Start:Window_2013$
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    1.390,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    1.390,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    3.220,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    3.220,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    6.010,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    6.010,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    7.840,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    7.840,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    10.620,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    10.620,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    12.450,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    12.450,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    15.240,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    15.240,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    17.070,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    17.070,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_5,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    19.850,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    19.850,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    21.680,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    21.680,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_6,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    24.470,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    24.470,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    26.300,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    26.300,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_door,  !- Name
+    GlassDoor,               !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    12.930,0.0000,2.1340,  !- X,Y,Z ==> Vertex 1 {m}
+    12.930,0.0000,0.0000,  !- X,Y,Z ==> Vertex 2 {m}
+    14.760,0.0000,0.0000,  !- X,Y,Z ==> Vertex 3 {m}
+    14.760,0.0000,2.1340;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,15.2400,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,15.2400,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,17.0700,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,17.0700,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,10.6200,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,10.6200,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,12.4500,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,12.4500,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,6.0100,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,6.0100,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,7.8400,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,7.8400,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,1.3900,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,1.3900,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,3.2200,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,3.2200,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    26.300,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    26.300,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    24.470,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    24.470,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    21.680,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    21.680,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    19.850,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    19.850,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    17.070,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    17.070,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    15.240,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    15.240,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    12.450,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    12.450,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    10.620,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    10.620,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_5,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    7.840,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    7.840,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    6.010,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    6.010,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_6,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    3.220,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    3.220,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    1.390,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    1.390,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,3.2200,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,3.2200,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,1.3900,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,1.3900,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,7.8400,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,7.8400,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,6.0100,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,6.0100,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,12.4500,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,12.4500,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,10.6200,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,10.6200,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.60_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,17.0700,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,17.0700,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,15.2400,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,15.2400,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+$End:Window_2013$
+
+$Start:Window_2016$
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    1.390,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    1.390,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    3.220,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    3.220,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    6.010,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    6.010,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    7.840,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    7.840,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    10.620,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    10.620,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    12.450,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    12.450,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    15.240,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    15.240,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    17.070,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    17.070,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_5,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    19.850,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    19.850,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    21.680,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    21.680,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_Window_6,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    24.470,0.0000,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    24.470,0.0000,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    26.300,0.0000,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    26.300,0.0000,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_1_wall_south_door,  !- Name
+    GlassDoor,               !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_1_wall_south,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    12.930,0.0000,2.1340,  !- X,Y,Z ==> Vertex 1 {m}
+    12.930,0.0000,0.0000,  !- X,Y,Z ==> Vertex 2 {m}
+    14.760,0.0000,0.0000,  !- X,Y,Z ==> Vertex 3 {m}
+    14.760,0.0000,2.1340;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,15.2400,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,15.2400,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,17.0700,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,17.0700,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,10.6200,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,10.6200,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,12.4500,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,12.4500,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,6.0100,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,6.0100,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,7.8400,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,7.8400,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_2_wall_east_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_2_wall_east,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    27.690,1.3900,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    27.690,1.3900,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    27.690,3.2200,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    27.690,3.2200,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    26.300,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    26.300,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    24.470,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    24.470,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    21.680,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    21.680,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    19.850,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    19.850,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    17.070,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    17.070,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    15.240,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    15.240,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    12.450,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    12.450,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    10.620,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    10.620,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_5,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    7.840,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    7.840,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    6.010,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    6.010,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_3_wall_north_Window_6,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_3_wall_north,  !- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    3.220,18.4600,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    3.220,18.4600,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    1.390,18.4600,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    1.390,18.4600,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_4,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,3.2200,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,3.2200,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,1.3900,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,1.3900,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_3,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,7.8400,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,7.8400,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,6.0100,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,6.0100,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_2,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,12.4500,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,12.4500,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,10.6200,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,10.6200,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+
+  FenestrationSurface:Detailed,
+    Perimeter_ZN_4_wall_west_Window_1,  !- Name
+    Window,                  !- Surface Type
+    Window_U_0.59_SHGC_0.25, !- Construction Name
+    Perimeter_ZN_4_wall_west,!- Building Surface Name
+    ,                        !- Outside Boundary Condition Object
+    AutoCalculate,           !- View Factor to Ground
+    ,                        !- Shading Control Name
+    ,                        !- Frame and Divider Name
+    1.0000,                  !- Multiplier
+    4,                       !- Number of Vertices
+    0.000,17.0700,2.4240,  !- X,Y,Z ==> Vertex 1 {m}
+    0.000,17.0700,0.9000,  !- X,Y,Z ==> Vertex 2 {m}
+    0.000,15.2400,0.9000,  !- X,Y,Z ==> Vertex 3 {m}
+    0.000,15.2400,2.4240;  !- X,Y,Z ==> Vertex 4 {m}
+$End:Window_2016$
+
+$Start:DualSetpoint_2004_2007_2010$
+  ThermostatSetpoint:DualSetpoint,
+    Core_ZN DualSPSched,     !- Name
+    HTGSETP_SCH_NO_OPTIMUM,  !- Heating Setpoint Temperature Schedule Name
+    CLGSETP_SCH_NO_SETBACK;  !- Cooling Setpoint Temperature Schedule Name
+
+  ThermostatSetpoint:DualSetpoint,
+    Perimeter_ZN_1 DualSPSched,  !- Name
+    HTGSETP_SCH_NO_OPTIMUM,  !- Heating Setpoint Temperature Schedule Name
+    CLGSETP_SCH_NO_SETBACK;  !- Cooling Setpoint Temperature Schedule Name
+
+  ThermostatSetpoint:DualSetpoint,
+    Perimeter_ZN_2 DualSPSched,  !- Name
+    HTGSETP_SCH_NO_OPTIMUM,  !- Heating Setpoint Temperature Schedule Name
+    CLGSETP_SCH_NO_SETBACK;  !- Cooling Setpoint Temperature Schedule Name
+
+  ThermostatSetpoint:DualSetpoint,
+    Perimeter_ZN_3 DualSPSched,  !- Name
+    HTGSETP_SCH_NO_OPTIMUM,  !- Heating Setpoint Temperature Schedule Name
+    CLGSETP_SCH_NO_SETBACK;  !- Cooling Setpoint Temperature Schedule Name
+
+  ThermostatSetpoint:DualSetpoint,
+    Perimeter_ZN_4 DualSPSched,  !- Name
+    HTGSETP_SCH_NO_OPTIMUM,  !- Heating Setpoint Temperature Schedule Name
+    CLGSETP_SCH_NO_SETBACK;  !- Cooling Setpoint Temperature Schedule Name
+$End:DualSetpoint_2004_2007_2010$
+
+$Start:DualSetpoint_2013_2016$
+  ThermostatSetpoint:DualSetpoint,
+    Core_ZN DualSPSched,     !- Name
+    HTGSETP_SCH_NO_OPTIMUM,  !- Heating Setpoint Temperature Schedule Name
+    CLGSETP_SCH_NO_OPTIMUM;  !- Cooling Setpoint Temperature Schedule Name
+
+  ThermostatSetpoint:DualSetpoint,
+    Perimeter_ZN_1 DualSPSched,  !- Name
+    HTGSETP_SCH_NO_OPTIMUM,  !- Heating Setpoint Temperature Schedule Name
+    CLGSETP_SCH_NO_OPTIMUM;  !- Cooling Setpoint Temperature Schedule Name
+
+  ThermostatSetpoint:DualSetpoint,
+    Perimeter_ZN_2 DualSPSched,  !- Name
+    HTGSETP_SCH_NO_OPTIMUM,  !- Heating Setpoint Temperature Schedule Name
+    CLGSETP_SCH_NO_OPTIMUM;  !- Cooling Setpoint Temperature Schedule Name
+
+  ThermostatSetpoint:DualSetpoint,
+    Perimeter_ZN_3 DualSPSched,  !- Name
+    HTGSETP_SCH_NO_OPTIMUM,  !- Heating Setpoint Temperature Schedule Name
+    CLGSETP_SCH_NO_OPTIMUM;  !- Cooling Setpoint Temperature Schedule Name
+
+  ThermostatSetpoint:DualSetpoint,
+    Perimeter_ZN_4 DualSPSched,  !- Name
+    HTGSETP_SCH_NO_OPTIMUM,  !- Heating Setpoint Temperature Schedule Name
+    CLGSETP_SCH_NO_OPTIMUM;  !- Cooling Setpoint Temperature Schedule Name
+$End:DualSetpoint_2013_2016$
+
+$Start:Door_R_2004_2007_2010_2013$
+  Material:NoMass,
+    Opaque Door panel_con,   !- Name
+    MediumRough,             !- Roughness
+    0.251572327,             !- Thermal Resistance {m2-K/W}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+$End:Door_R_2004_2007_2010_2013$
+
+$Start:Door_R_2016$
+  Material:NoMass,
+    Opaque Door panel_con,   !- Name
+    MediumRough,             !- Roughness
+    0.475963827,             !- Thermal Resistance {m2-K/W}
+    0.9,                     !- Thermal Absorptance
+    0.7,                     !- Solar Absorptance
+    0.7;                     !- Visible Absorptance
+$End:Door_R_2016$
+
+$Start:EMS_2004_2007_2010_2013$
+! no LPD based override EMS is used
+$End:EMS_2004_2007_2010_2013$
+
+$Start:EMS_2016$
+  EnergyManagementSystem:Sensor,
+    Core_ZN_LSr,             !- Name
+    Core_ZN,                 !- Output:Variable or Output:Meter Index Key Name
+    Zone Lights Electric Power;  !- Output:Variable or Output:Meter Name
+
+  EnergyManagementSystem:Sensor,
+    Core_ZN_Occ_Sensor,      !- Name
+    Core_ZN,                 !- Output:Variable or Output:Meter Index Key Name
+    People Occupant Count;   !- Output:Variable or Output:Meter Name
+
+  EnergyManagementSystem:InternalVariable,
+    Core_ZN_Area,            !- Name
+    Core_ZN,                 !- Internal Data Index Key Name
+    Zone Floor Area;         !- Internal Data Type
+
+  EnergyManagementSystem:Actuator,
+    Core_ZN_Light_Actuator,  !- Name
+    Core_ZN_lights,          !- Actuated Component Unique Name
+    Lights,                  !- Actuated Component Type
+    Electric Power Level;    !- Actuated Component Control Type
+
+  EnergyManagementSystem:Program,
+    SET_Core_ZN_Light_EMS_Program,  !- Name
+    SET Core_ZN_LSr_IP=0.093*Core_ZN_LSr/Core_ZN_Area,  !- Program Line 1
+    IF (Core_ZN_Occ_Sensor <= 0) && (Core_ZN_LSr_IP >= 0.02),  !- Program Line 2
+    SET Core_ZN_Light_Actuator = 0.02*Core_ZN_Area/0.09290304,  !- <none>
+    ELSE,                    !- <none>
+    SET Core_ZN_Light_Actuator = NULL,  !- <none>
+    ENDIF;                   !- <none>
+
+  EnergyManagementSystem:ProgramCallingManager,
+    SET_Core_ZN_Light_EMS_Program_Prog_Manager,  !- Name
+    BeginTimestepBeforePredictor,  !- EnergyPlus Model Calling Point
+    SET_Core_ZN_Light_EMS_Program;  !- Program Name 1
+
+!- for zone "Perimeter_ZN_1"
+
+  EnergyManagementSystem:Sensor,
+    Perimeter_ZN_1_LSr,      !- Name
+    Perimeter_ZN_1,          !- Output:Variable or Output:Meter Index Key Name
+    Zone Lights Electric Power;  !- Output:Variable or Output:Meter Name
+
+  EnergyManagementSystem:Sensor,
+    Perimeter_ZN_1_Occ_Sensor,  !- Name
+    Perimeter_ZN_1,          !- Output:Variable or Output:Meter Index Key Name
+    People Occupant Count;   !- Output:Variable or Output:Meter Name
+
+  EnergyManagementSystem:InternalVariable,
+    Perimeter_ZN_1_Area,     !- Name
+    Perimeter_ZN_1,          !- Internal Data Index Key Name
+    Zone Floor Area;         !- Internal Data Type
+
+  EnergyManagementSystem:Actuator,
+    Perimeter_ZN_1_Light_Actuator,  !- Name
+    Perimeter_ZN_1_lights,   !- Actuated Component Unique Name
+    Lights,                  !- Actuated Component Type
+    Electric Power Level;    !- Actuated Component Control Type
+
+  EnergyManagementSystem:Program,
+    SET_Perimeter_ZN_1_Light_EMS_Program,  !- Name
+    SET Perimeter_ZN_1_LSr_IP=0.093*Perimeter_ZN_1_LSr/Perimeter_ZN_1_Area,  !- Program Line 1
+    IF (Perimeter_ZN_1_Occ_Sensor <= 0) && (Perimeter_ZN_1_LSr_IP >= 0.02),  !- Program Line 2
+    SET Perimeter_ZN_1_Light_Actuator = 0.02*Perimeter_ZN_1_Area/0.09290304,  !- <none>
+    ELSE,                    !- <none>
+    SET Perimeter_ZN_1_Light_Actuator = NULL,  !- <none>
+    ENDIF;                   !- <none>
+
+  EnergyManagementSystem:ProgramCallingManager,
+    SET_Perimeter_ZN_1_Light_EMS_Program_Prog_Manager,  !- Name
+    BeginTimestepBeforePredictor,  !- EnergyPlus Model Calling Point
+    SET_Perimeter_ZN_1_Light_EMS_Program;  !- Program Name 1
+
+!- for zone "Perimeter_ZN_2"
+
+  EnergyManagementSystem:Sensor,
+    Perimeter_ZN_2_LSr,      !- Name
+    Perimeter_ZN_2,          !- Output:Variable or Output:Meter Index Key Name
+    Zone Lights Electric Power;  !- Output:Variable or Output:Meter Name
+
+  EnergyManagementSystem:Sensor,
+    Perimeter_ZN_2_Occ_Sensor,  !- Name
+    Perimeter_ZN_2,          !- Output:Variable or Output:Meter Index Key Name
+    People Occupant Count;   !- Output:Variable or Output:Meter Name
+
+  EnergyManagementSystem:InternalVariable,
+    Perimeter_ZN_2_Area,     !- Name
+    Perimeter_ZN_2,          !- Internal Data Index Key Name
+    Zone Floor Area;         !- Internal Data Type
+
+  EnergyManagementSystem:Actuator,
+    Perimeter_ZN_2_Light_Actuator,  !- Name
+    Perimeter_ZN_2_lights,   !- Actuated Component Unique Name
+    Lights,                  !- Actuated Component Type
+    Electric Power Level;    !- Actuated Component Control Type
+
+  EnergyManagementSystem:Program,
+    SET_Perimeter_ZN_2_Light_EMS_Program,  !- Name
+    SET Perimeter_ZN_2_LSr_IP=0.093*Perimeter_ZN_2_LSr/Perimeter_ZN_2_Area,  !- Program Line 1
+    IF (Perimeter_ZN_2_Occ_Sensor <= 0) && (Perimeter_ZN_2_LSr_IP >= 0.02),  !- Program Line 2
+    SET Perimeter_ZN_2_Light_Actuator = 0.02*Perimeter_ZN_2_Area/0.09290304,  !- <none>
+    ELSE,                    !- <none>
+    SET Perimeter_ZN_2_Light_Actuator = NULL,  !- <none>
+    ENDIF;                   !- <none>
+
+  EnergyManagementSystem:ProgramCallingManager,
+    SET_Perimeter_ZN_2_Light_EMS_Program_Prog_Manager,  !- Name
+    BeginTimestepBeforePredictor,  !- EnergyPlus Model Calling Point
+    SET_Perimeter_ZN_2_Light_EMS_Program;  !- Program Name 1
+
+!- for zone "Perimeter_ZN_3"
+
+  EnergyManagementSystem:Sensor,
+    Perimeter_ZN_3_LSr,      !- Name
+    Perimeter_ZN_3,          !- Output:Variable or Output:Meter Index Key Name
+    Zone Lights Electric Power;  !- Output:Variable or Output:Meter Name
+
+  EnergyManagementSystem:Sensor,
+    Perimeter_ZN_3_Occ_Sensor,  !- Name
+    Perimeter_ZN_3,          !- Output:Variable or Output:Meter Index Key Name
+    People Occupant Count;   !- Output:Variable or Output:Meter Name
+
+  EnergyManagementSystem:InternalVariable,
+    Perimeter_ZN_3_Area,     !- Name
+    Perimeter_ZN_3,          !- Internal Data Index Key Name
+    Zone Floor Area;         !- Internal Data Type
+
+  EnergyManagementSystem:Actuator,
+    Perimeter_ZN_3_Light_Actuator,  !- Name
+    Perimeter_ZN_3_lights,   !- Actuated Component Unique Name
+    Lights,                  !- Actuated Component Type
+    Electric Power Level;    !- Actuated Component Control Type
+
+  EnergyManagementSystem:Program,
+    SET_Perimeter_ZN_3_Light_EMS_Program,  !- Name
+    SET Perimeter_ZN_3_LSr_IP=0.093*Perimeter_ZN_3_LSr/Perimeter_ZN_3_Area,  !- Program Line 1
+    IF (Perimeter_ZN_3_Occ_Sensor <= 0) && (Perimeter_ZN_3_LSr_IP >= 0.02),  !- Program Line 2
+    SET Perimeter_ZN_3_Light_Actuator = 0.02*Perimeter_ZN_3_Area/0.09290304,  !- <none>
+    ELSE,                    !- <none>
+    SET Perimeter_ZN_3_Light_Actuator = NULL,  !- <none>
+    ENDIF;                   !- <none>
+
+  EnergyManagementSystem:ProgramCallingManager,
+    SET_Perimeter_ZN_3_Light_EMS_Program_Prog_Manager,  !- Name
+    BeginTimestepBeforePredictor,  !- EnergyPlus Model Calling Point
+    SET_Perimeter_ZN_3_Light_EMS_Program;  !- Program Name 1
+
+!- for zone "Perimeter_ZN_4"
+
+  EnergyManagementSystem:Sensor,
+    Perimeter_ZN_4_LSr,      !- Name
+    Perimeter_ZN_4,          !- Output:Variable or Output:Meter Index Key Name
+    Zone Lights Electric Power;  !- Output:Variable or Output:Meter Name
+
+  EnergyManagementSystem:Sensor,
+    Perimeter_ZN_4_Occ_Sensor,  !- Name
+    Perimeter_ZN_4,          !- Output:Variable or Output:Meter Index Key Name
+    People Occupant Count;   !- Output:Variable or Output:Meter Name
+
+  EnergyManagementSystem:InternalVariable,
+    Perimeter_ZN_4_Area,     !- Name
+    Perimeter_ZN_4,          !- Internal Data Index Key Name
+    Zone Floor Area;         !- Internal Data Type
+
+  EnergyManagementSystem:Actuator,
+    Perimeter_ZN_4_Light_Actuator,  !- Name
+    Perimeter_ZN_4_lights,   !- Actuated Component Unique Name
+    Lights,                  !- Actuated Component Type
+    Electric Power Level;    !- Actuated Component Control Type
+
+  EnergyManagementSystem:Program,
+    SET_Perimeter_ZN_4_Light_EMS_Program,  !- Name
+    SET Perimeter_ZN_4_LSr_IP=0.093*Perimeter_ZN_4_LSr/Perimeter_ZN_4_Area,  !- Program Line 1
+    IF (Perimeter_ZN_4_Occ_Sensor <= 0) && (Perimeter_ZN_4_LSr_IP >= 0.02),  !- Program Line 2
+    SET Perimeter_ZN_4_Light_Actuator = 0.02*Perimeter_ZN_4_Area/0.09290304,  !- <none>
+    ELSE,                    !- <none>
+    SET Perimeter_ZN_4_Light_Actuator = NULL,  !- <none>
+    ENDIF;                   !- <none>
+
+  EnergyManagementSystem:ProgramCallingManager,
+    SET_Perimeter_ZN_4_Light_EMS_Program_Prog_Manager,  !- Name
+    BeginTimestepBeforePredictor,  !- EnergyPlus Model Calling Point
+    SET_Perimeter_ZN_4_Light_EMS_Program;  !- Program Name 1
+$End:EMS_2016$
